@@ -1,19 +1,44 @@
-* 1. \xy.xz
+* Intermission
+** 1. \xy.xz
   (\x.(\y.xz)) 1 2
   (\y.1z) 2
   z
   b is equivalent
 
-* 2. \xy.xxy
+** 2. \xy.xxy
   (\x.(\y.xxy)) 1
   (\y.(1(1y)))
   (\y.y) 2
   2
   c is equivalent
 
-* 3 \xyz.zx
+** 3 \xyz.zx
   (\x.(\y.(\z.zx))) 1
-  (\y.(\z.z1)) 2
-  (\z.z) 3
-  3
-  c is equivalent
+  (\y.(\z.z))
+  b is equivalent
+
+* Chapter 1 Exercises
+** Combinators Determine whether each of the following functions
+   are combinators or not:
+   1. \x.xxx
+      true
+
+   2. \xy.zx
+      false
+
+   3. \xyz.xy(zx)
+
+
+
+   4. \xyz.xy(zxy)
+
+
+
+   5. xy.xy(zxy)
+
+
+**
+   Diverge
+
+** 3. (\x.xxx)z
+   Normal
