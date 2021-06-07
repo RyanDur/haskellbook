@@ -18,8 +18,11 @@
   b is equivalent
 
 * Chapter 1 Exercises
-** Combinators Determine whether each of the following functions
+** Combinators
+
+   Determine whether each of the following functions
    are combinators or not:
+
    1. \x.xxx
       true
 
@@ -27,18 +30,41 @@
       false
 
    3. \xyz.xy(zx)
-
-
+      true
 
    4. \xyz.xy(zxy)
+      true
 
+   5. \xy.xy(zxy)
+      false
 
+** Beta reduce
 
-   5. xy.xy(zxy)
+   Evaluate (that is, beta reduce) each of the following
+   expressions to normal form. We strongly recommend writing
+   out the steps on paper with a pen or pencil:
 
+   1. (\abc.cba)zz(\wv.w)
+      (\a\b\c.cba)zz(\w\v.w)
+      (\b\c.cbz)z(\w\v.w)
+      (\c.czz)(\w\v.w)
+      (\w\v.w)(z)z
+      (\v.z)z
+      z
 
-**
-   Diverge
+   2. (\x.\y.xyy)(\a.a)b
+      (\y.(\a.a)yy)b
+      (\a.a)bb
+      bb
 
-** 3. (\x.xxx)z
-   Normal
+   3. (\y.y)(\x.xx)(\z.zq)
+      (\x.xx)(\z.zq)
+      (\z.zq)(\z.zq)
+      (\z.zq)q
+      qq
+
+   4. (\z.z)(\z.zz)(\z.zy)
+      (\z.zz)(\z.zy)
+      (\z.zy)(\z.zy)
+      (\z.zy)y
+      yy
