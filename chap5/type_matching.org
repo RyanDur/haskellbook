@@ -1,0 +1,5 @@
+#+TITLE: Type Matching
+
+* Functions -> Type Signatures
+
+  a) not -> c) _ :: Bool -> Bool
