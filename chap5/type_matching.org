@@ -2,4 +2,8 @@
 
 * Functions -> Type Signatures
 
-  a) not -> c) _ :: Bool -> Bool
+  a) not     ->  c) _ :: Bool -> Bool
+  b) length  ->  d) _ :: [a] -> Int
+  c) concat  ->  b) _ :: \[[a]\] -> [a]
+  d) head    ->  a) _ :: [a] -> a
+  e) (<)     ->  e) _ :: Ord a => a -> a -> Bool
